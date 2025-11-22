@@ -20,7 +20,8 @@ st.sidebar.image(
     use_container_width=True,
 )
 st.sidebar.header("Developers:")
-st.sidebar.write("- Ku Muhammad Naim Ku Khalif","- Yap Pei Yeuan")
+for dev in ["Ku Muhammad Naim Ku Khalif","Yap Pei Yeuan"]:
+    st.sidebar.write(f"- {dev}")
 
 # -----------------------------
 # Dataset upload
@@ -215,4 +216,5 @@ st.graphviz_chart(dot_data)
 st.caption(
     "Tree generated with sklearn.tree.export_graphviz and rendered with st.graphviz_chart()."
 )
+
 
